@@ -7,8 +7,6 @@ class Student(BaseModel):
     name: str
     age: int =0
     address: dict = {
-        "city": str,
-        "country": str
     }
     @validator("address")
     def validate_address(cls, value):
